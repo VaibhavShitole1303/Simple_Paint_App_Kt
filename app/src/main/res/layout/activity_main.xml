@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:id="@+id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/toolbarbackground"
+    android:gravity="center"
+    >
+    <ImageButton
+        android:id="@+id/btnredColor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/redbackground" />
+    <ImageButton
+        android:id="@+id/btnblueColor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bluebackground" />
+    <ImageButton
+        android:id="@+id/btnblackColor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/blackbackground" />
+    <ImageButton
+        android:id="@+id/btnEraser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/whitebackground" />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <com.example.simple_paint_app.Paint_View
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+  </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
